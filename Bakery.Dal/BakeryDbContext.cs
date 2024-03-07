@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bakery.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -15,8 +16,9 @@ namespace Bakery.Dal
         }
 
         // welke tabellen wil je in de database?
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
 
-        
 
         // Stap 1: Migraties inschakelen --> dit moet je slechts één keer doen
         // EntityFramework6\Enable-Migrations
@@ -27,6 +29,6 @@ namespace Bakery.Dal
 
         // Stap 3: Update de database --> altijd nadat je eerst Add-Migration (stap 2) gedaan hebt
         // EntityFramework6\Update-Database
-        
+
     }
 }
