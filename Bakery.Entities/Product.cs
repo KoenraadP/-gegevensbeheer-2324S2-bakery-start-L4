@@ -26,6 +26,11 @@ namespace Bakery.Entities
             
         }
 
+        public Product(string name)
+        {
+            Name = name;
+        }
+
         public Product(string name, string description, string image, decimal price, bool available)
         {
             Name = name;
@@ -33,6 +38,17 @@ namespace Bakery.Entities
             Image = image;
             Price = price;
             Available = available;
+        }
+
+        public Product(string name, string description, string image, 
+            decimal price, bool available, Category category)
+        {
+            Name = name;
+            Description = description;
+            Image = image;
+            Price = price;
+            Available = available;
+            Category = category;
         }
     }
 }

@@ -26,6 +26,7 @@ namespace Bakery.Entities
         public Category(string name)
         {
             Name = name;
+            Products = new List<Product>();
         }
     }
 }
