@@ -1,4 +1,5 @@
-﻿using Bakery.Entities;
+﻿using Bakery.Bll;
+using Bakery.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Bakery.WebApp.Controllers
         // READ ALL
         public ActionResult Index()
         {
-            List<Product> lstProducts = new List<Product>();
+            List<Product> lstProducts = Products.Read();
             return View(lstProducts);
         }
     }
