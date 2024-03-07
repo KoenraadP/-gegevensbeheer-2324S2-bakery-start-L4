@@ -19,7 +19,7 @@ namespace Bakery.Entities
 
         // welke relatie is er ten opzichte van Category?
         
-
+         
 
         public Product()
         {
