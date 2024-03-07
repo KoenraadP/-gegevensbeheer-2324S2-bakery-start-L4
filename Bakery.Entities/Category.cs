@@ -14,8 +14,9 @@ namespace Bakery.Entities
         public string Name { get; set; }
 
         // welke relatie is er ten opzichte van Product?
+        // één categorie kan veel producten bevatten
 
-
+        public List<Product> Products { get; set; }
 
         public Category()
         {

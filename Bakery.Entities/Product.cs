@@ -18,8 +18,8 @@ namespace Bakery.Entities
         public bool Available { get; set; }
 
         // welke relatie is er ten opzichte van Category?
-        
-         
+        // één product zit in één categorie
+        public Category Category { get; set; }
 
         public Product()
         {
