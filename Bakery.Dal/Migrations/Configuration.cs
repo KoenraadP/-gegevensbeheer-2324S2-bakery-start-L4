@@ -28,6 +28,8 @@
             // tabel Categories in databank
             context.Categories.AddOrUpdate(c1, c2);
 
+            context.SaveChanges();
+
             // twee test producten maken 
             Product p1 = new Product("Eclair");
             Product p2 = new Product("Groot bruin brood",
